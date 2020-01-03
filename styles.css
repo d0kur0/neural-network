@@ -131,11 +131,13 @@ footer {
 }
 
 .result__download {
+    cursor: pointer;
     font: inherit;
     padding: 27px 91px;
     border: 2px solid #a5a5a5;
     border-radius: 8px;
     background-color: #424242;
     color: #fff;
+    font-weight: bolder;
     font-size: 1.2em;
 }
