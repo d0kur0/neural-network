@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YouFaceToAnimal</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js" async></script>
+    </head>
+    <body>
+        <header class="logotype">
+            <a href="#" class="logotype__link">
+                YouFaceToAnimal
+                <span class="logotype__app">App</span>
+            </a>
+        </header>
+
+        <main>
+            <section class="description">
+                <b>YouFaceToAnimal</b> - a neural network that allows you to transform your face into an animal, the animal will be automatically selected based on your face.
+            </section>
+
+            <section class="upload-file">
+                <div class="upload-file__area"></div>
+                <input class="upload-file__input" type="file" accept=".png, .jpg, .jpeg, .gif">
+            </section>
+
+            <section class="progress hidden">
+                <div class="progress__label">Upload file to server</div>
+                <div class="progress__line">
+                    <div class="progress__outer-line"></div>
+                </div>
+            </section>
+
+            <section class="result">
+                <button class="result__download">Download result</button>
+            </section>
+
+        </main>
+
+        <footer>
+            <a href="http://www.mit.edu/">&copy; MIT - Massachusetts Institute of Technology</a>
+        </footer>
+    </body>
+</html>
