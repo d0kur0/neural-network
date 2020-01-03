@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f5f5f5;
+}
+
+body {
+    margin: auto;
+    max-width: 520px;
+    padding: 0 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #555;
+}
+
+header {
+
+}
+
+main {
+    min-height: calc(100vh - (50px + 140px));
+}
+
+footer {
+    height: 50px;
+}
+
+.logotype {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logotype__link {
+    font-weight: bolder;
+    color: #5f5f5f;
+    text-shadow: 0 1px 1px #d6d6d6;
+    font-size: 2.0em;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.logotype__link:hover {
+    color: #2b2b2b;
+}
+
+.logotype__app {
+    font-size: 0.5em;
+}
+
+.description {
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+.upload-file {
+    margin-top: 100px;
+}
+
+.upload-file__input {
+    display: none;
+}
+
+.upload-file__area {
+    cursor: pointer;
+    width: 100%;
+    height: 200px;
+    border: 4px dashed #003c44;
+    color: #160c2c;
+    font-weight: bolder;
+    font-size: 1.5em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    position: relative;
+}
+
+.upload-file__area:hover {
+    border-color: #1b1e1f;
+    color: #080808;
+    background-color: #ececec;
+}
+
+.upload-file__area::after {
+    content: "Select a file";
+}
+
+.hidden {
+    display: none;
+}
+
+.progress {
+
+}
+
+.progress__line {
+    border: 4px solid #373737;
+    border-radius: 10px;
+    height: 50px;
+}
+
+.progress__outer-line {
+    height: 100%;
+    width: 5%;
+    background-color: #555;
+}
+
+.progress__label {
+    font-weight: bolder;
+    padding: 10px 0;
+}
+
+.result {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result__download {
+    font: inherit;
+    padding: 27px 91px;
+    border: 2px solid #a5a5a5;
+    border-radius: 8px;
+    background-color: #424242;
+    color: #fff;
+    font-size: 1.2em;
+}
