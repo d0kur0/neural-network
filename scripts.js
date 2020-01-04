@@ -39,3 +39,12 @@ uploadField.addEventListener("change", e => {
 
     startProgress();
 });
+
+result.querySelector('.result__download').addEventListener("click", e => {
+    const video = result.querySelector('.result__view-video');
+    const wrapper = result.querySelector('.result__view-wrapper');
+
+    wrapper.classList.remove("hidden");
+    video.addEventListener("ended", () => video.play());
+    video.play();
+});
