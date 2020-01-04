@@ -13,14 +13,14 @@ const startProgress = () => {
         width = width + randomInteger(1, 5);
         width = width > 100 ? 100 : width;
 
-        if (width > 30) {
+        if (width > 10) {
             progressLabel.textContent = "Image processing";
         }
 
         progressOuterLine.style.width = `${width}%`;
 
         if (width < 100) {
-            setTimeout(timeoutCallback, randomInteger(200, 2000));
+            setTimeout(timeoutCallback, randomInteger(200, 1000));
         } else {
             progress.classList.add('hidden');
             result.classList.remove('hidden');
